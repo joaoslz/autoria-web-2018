@@ -1,27 +1,51 @@
 body {
 	font-family: Arial, sans-serif;
 	width: 940px;
+	color: #333;
+	
 	margin-right: auto;
-	margin-left: auto;
+	margin-left: auto; 
+}
+
+.cabecalho {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#email {
+	color: #3b3be6;
+	text-decoration: underline;
 }
 
 h1 {
 	font-size: 50px;
+	margin-top: 15px;
 }
 
 h2 {
-	background-color: #334e1f; 
+	background-color: #4e7c2d; 
 	color: #DDD;
-	font-size: 33px;
+	font-size: 28px;
 
-	/* padding: 10px; */
-	padding-left: 10px;
+	padding-left: 20px;
 	padding-top: 8px;
 	padding-bottom: 5px;
+	
+	/* border-radius: 15px; */
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 43px;
+	
+	
 }
 
 .experiencia {
 	text-indent: 30px;
+}
+
+.tec {
+	font-family: monospace;
+	font-size: 130%;
+	font-weight: bold;
 }
 
 
