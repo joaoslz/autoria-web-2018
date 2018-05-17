@@ -1,10 +1,57 @@
-.menu li {
-	display: inline-block;
-	margin-right: 40px;
-	background-color: #C7BE9B;
-	padding: 10px;
+body {
+		background-color: #f7e8c6;
+}
 
-	width: 120px;
+.conteudo {
+	width: 720px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FFF;
+	
+	border-left: 1px SOLID #000;
+	padding-left: 10px;
+	
+	float: right;
 	
 }
 
+.menu li {
+	/* display: inline-block; */
+	margin-right: 40px;
+	background-color: #C7BE9B;
+	padding: 10px;
+}
+
+
+#topo {
+	text-align: center;
+}
+
+#tbl-nutrientes {
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+	
+	border: 2px SOLID #444;
+	
+}
+
+#tbl-nutrientes thead {
+	background-color: #333;
+	color: white;
+}
+
+#tbl-nutrientes tr {
+	line-height: 170%;
+
+#tbl-nutrientes tbody tr:nth-child(odd) {
+	background-color: #f8f0a2;
+}
+
+#tbl-nutrientes tbody tr:nth-child(even) {
+	background-color: #eadaeb;
+}
+
+.cabecalho {
+	float: left;
+}
