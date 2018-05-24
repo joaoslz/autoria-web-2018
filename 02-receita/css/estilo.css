@@ -1,0 +1,100 @@
+
+body{
+    background-color: #F5F0DC;
+    font-family: Helvetica, Arial, sans-serif;
+    width: 960px;
+    margin: auto;
+}
+
+#titulo {
+	text-align: center;
+}
+
+
+nav {
+    float: left;
+    width: 200px;
+}
+
+nav ul li {
+    background-color: #C7BE9B;
+    margin-bottom: 3px;
+    padding: 3px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li:hover{ 
+    background-color:#9C8F67; 
+} 
+
+#conteudo {
+    float: right;
+    width: 760;
+}
+
+#banner {
+    top: 0;
+    right: 0;
+    position: fixed;
+	 transform: translate(25px, 50px) rotate(45deg);
+}
+
+h2{
+    background-color: #B3A742;
+    background:-moz-linear-gradient(top, #9C8F67, #C7BE9B);
+    background:-webkit-linear-gradient(top, #9C8F67, #C7BE9B);
+    background:-o-linear-gradient(top, #9C8F67, #C7BE9B);
+    background:-ms-linear-gradient(top, #9C8F67, #C7BE9B);
+    padding: 5px;
+    color: #FFFFFF;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+#tb-nutrientes{
+    border: 1px solid black;
+    width: 60%;
+    margin: auto;
+}
+
+#tb-nutrientes th{
+    background-color: #F8EA6B;
+}
+
+
+#tb-nutrientes tr:nth-child(odd) {
+    background-color: #FFFFFF;
+}
+
+#tb-nutrientes tr:nth-child(even){
+    background-color: #F8EAB3;
+}
+
+figure{
+    background-color:white;
+    width:300px;
+    text-align:center;
+    padding:15px;
+    font-family:'Comic Sans MS',cursive;
+    border:1px solid black;
+
+    box-shadow:5px 5px 3px rgba(0,0,0,0.7);
+ }
+
+figure:hover {
+   -moz-transform:rotate(-5deg);
+   -webkit-transform:rotate(-5deg);
+  
+}
+
+a:hover {
+    text-decoration: underline;
+}
