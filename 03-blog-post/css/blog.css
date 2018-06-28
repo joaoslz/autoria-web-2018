@@ -1,0 +1,33 @@
+
+.foto-autor img {
+	height: 100px;
+	width: auto;
+	border-radius: 50%;
+	float: left;
+}
+
+.foto-autor .nome-autor {
+	font-size: 1em;
+	float: left;
+	margin-top: 30px;
+	margin-left: 10px;
+	text-decoration: overline;
+	font-style: italic;
+}
+
+
+.box-img-links {
+	position: relative;
+}
+
+.box-links {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+.box-links a {
+	font-weight: 600;
+	color: #0B486B;
+	text-decoration: none;
+}

@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Boxes estruturais */
+
+.container {
+	width: 960px;
+	margin: auto;
+}
+
+.blog-post {
+	width: 80%;
+	float: left;
+	border-right: 2px dotted #0CC;
+	padding-right: 10px;
+	position: relative
+}
+
+.data-post {
+	position: absolute;
+	top: 40px;
+	right: 10px;
+	margin: 0;
+	border: 1px dotted #3B8686
+;
+	border-radius: 5px;
+	background-color: #79BD9A;
+	color: white;
+	opacity: 0.5;
+	font-size: 0.8em;
+	padding: 5px;
+	
+}
+
+
+.outros-posts {
+	width: 20%;
+	float: left;
+	padding: 20px;
+}
+
+.outro-post {
+	margin-bottom: 40px;
+}
+
+
+.outro-post:first-child {
+	margin-top: 20px;
+}
+
+.clearfix {
+	clear: both;
+}

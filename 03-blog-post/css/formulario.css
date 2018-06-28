@@ -1,0 +1,36 @@
+fieldset {
+	background-color: #EEE;
+	border: none;
+	padding: 0.6rem;
+	padding-bottom: 1.5rem;
+}
+
+fieldset:first-child {
+	margin-bottom: 2rem;
+}
+
+legend {
+	background-color: #CCC;
+	font-size: 1.3rem;
+	padding: 0.2rem;
+}
+
+
+label[for] {
+	display: block;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+	width: 95%;
+	font-family: inherit;
+	font-size: 1rem;
+	padding: 0.3em;
+}
+
+.btn-principal {
+	background-color: #3B8686;
+}
+
+

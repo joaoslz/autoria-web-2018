@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>Meu primeiro Post</title>
+	<link rel="stylesheet" href="css/estrutura.css">
+	<link rel="stylesheet" href="css/tipografia.css">
+	<link rel="stylesheet" href="css/blog.css">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+</head>
+
+<body>
+	<main class="container">
+		<section class="blog-post">
+			<h1 class="titulo-post">Meu Primeiro Post</h1>
+			<p class="data-post">08 de Maio de 2017</p>
+
+			<h2 class="titulo-peso-2">Este é o meu primeiro Post no blog</h2>
+
+			<p class="capitular"><strong>Lorem Ipsum</strong> é simplesmente uma simulação de texto da <em>indústria tipográfica</em> e de impressos, e vem sendo utilizado desde o <u>século XVI</u>, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
+
+			<div class="box-img-links">
+				<img src="imagens/logo-html.png" alt="Logo do HTML" width="50%">
+
+				<div class="box-links">
+					<a href="http://w3c.org">W3C</a>
+					<a href="imagens/logo-html.png">logoHTML</a>
+				</div>
+			</div>
+
+			<h2 class="titulo-peso-2">O fantástico Mundo do HTML</h2>
+			<p class="texto-principal">É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras, ao contrário de "Conteúdo aqui, conteúdo aqui", fazendo com que ele tenha uma aparência similar a de um texto legível. Muitos softwares de publicação e editores de páginas na internet agora usam Lorem Ipsum como texto-modelo padrão, e uma rápida busca por 'lorem ipsum' mostra vários websites ainda em sua fase de construção. Várias versões novas surgiram ao longo dos anos, eventualmente por acidente, e às vezes de propósito (injetando humor, e coisas do gênero).</p>
+
+			<blockquote class="citacao" cite="https://pensador.uol.com.br">
+				<p>Confie nos seus instintos. Não tenha medo de ir contra o que lhe foi ensinado, contra o que o mandaram ver ou acreditar.</p>
+				<cite class="autor">Autor desconhecido.</cite>
+			</blockquote>
+
+			<p>
+				Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC. Richard McClintock, um professor de latim do Hampden-Sydney College na Virginia, pesquisou uma das mais obscuras palavras em latim, consectetur, oriunda de uma passagem de Lorem Ipsum, e, procurando por entre citações da palavra na literatura clássica, descobriu a sua indubitável origem.
+			</p>
+
+
+			<div>
+				<h3 class="titulo-peso-2">Caminhos de rato</h3>
+				<p>Os caminhos de rato são espaços vazios entre as palavras, normalmente formados por um texto mal justificado ou por um espaçamento entre palavras (<em>word-spacing</em>) mal elaborado.</p>
+				<p>Por exemplo, o parágrafo a seguir recebeu texto <b>justificado</b>, mas não possui uma hifenização adequada:</p>
+				<p class="justificado-errado">
+					Este é um parágrafo de exemplo e está justificado, diferente do resto do conteúdo que está, na maior parte, alinhado à esquerda. Perceba os "caminhos de rato" que se formam entre as palavras. É um problema que pode ser resolvido com hifenização, mas não se trata de algo tão simples em CSS, pois deve considerar a separação correta de sílaba do idioma da página.
+				</p>
+				<p>O Html não sabe exatamente onde as palavras devem ser quebradas para separar as sílabas em cada idioma. Uma forma de produzir textos justificados e hifenizados, é declarar os hífens condicionais nas palavras com o caractere <b>&­shy;</b> (contração de "soft hyphen") e adicionar a propriedade <b>hyphens</b> ao CSS. Vamos estilizar o último parágrafo deste bloco, que já tem os hífens declarados, adicionando o seguinte ao <b>tipografia.css</b>:</p>
+				<pre class="codigo">
+.justificado-certo{
+	text-align: justify;
+	color: #0CC;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}</pre>
+				<p class="justificado-certo">Este pará&shy;grafo rece&shy;beu a hife&shy;ni&shy;zação condi&shy;cional em di&shy;ver&shy;sas pa&shy;la&shy;vras e, por esse mo&shy;tivo, o texto justi&shy;ficado se com&shy;por&shy;ta de ma&shy;nei&shy;ra ade&shy;quada. Os "cami&shy;nhos de rato" não são produ&shy;zidos, pois as pa&shy;la&shy;vras podem se se&shy;pa&shy;rar para melhor se ajus&shy;tarem ao bloco. Infe&shy;liz&shy;mente, para que isso acon&shy;teça, é neces&shy;sário declarar o hífen condi&shy;cional no html e defi&shy;nir a proprie&shy;dade css <b>hyphens</b> como auto&shy;mática.</p>
+				<p>Se tivéssemos que declarar todos os hífens, seria um trabalhão, não? Por isso que a maioria dos sites não utiliza texto justificado.</p>
+			</div>
+
+		</section>
+
+		<aside class="outros-posts">
+			<div class="outro-post"><a href="#">Javascritp- cidadão de primeira classe</a></div>
+			<div class="outro-post"><a href="#">NodeJS - Framework do momento</a></div>
+			<div class="outro-post"><a href="#">O melhor post de todos</a></div>
+		</aside>
+
+		<footer class="clearfix">
+
+			<figure class="foto-autor">
+				<img src="imagens/autor_blog.jpg" alt="Fotor do autor do Post">
+				<figcaption class="nome-autor">Fulano da Silva &copy;</figcaption>
+			</figure>
+		</footer>
+	</main>
+</body>
+
+</html>
