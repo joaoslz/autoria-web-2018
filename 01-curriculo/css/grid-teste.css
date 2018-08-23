@@ -1,0 +1,12 @@
+.row {
+	margin: 5px;
+	border: 2px SOLID #555;
+}
+
+.row > div:nth-child(odd) {
+	background-color: antiquewhite;
+}
+
+.row > div:nth-child(even) {
+	background-color: aquamarine;
+}

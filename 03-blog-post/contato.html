@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/estrutura.css">
 	<link rel="stylesheet" href="css/tipografia.css">
 	<link rel="stylesheet" href="css/blog.css">
-	<link rel="stylesheet" href="css/formulario2.css">
+	<link rel="stylesheet" href="css/formulario.css">
 	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
 </head>
 
@@ -23,14 +23,18 @@
 			<p>Fomulário Aqui !!!</p>
 			
 			 <form>
-			 	 
+		 	 <fieldset>
+		 	 	 <legend>Dados Pessoais</legend> 			 	 
 				 <label for="nome">Nome</label>
 				 <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" autofocus>
-				 <p>
+				 
 				 <label for="email">E-mail</label>
 				 <input type="email" id="email" name="email" placeholder="Digite um email valido">
-				 <p>
-				 
+			
+				</fieldset> 
+			
+				<fieldset>
+					<legend>Mensagem</legend>
 				 
 				 <label>
 				   <input type="radio" name="assunto" value="html">HTML/CSS
@@ -44,15 +48,13 @@
 				   <input type="radio" name="assunto" value="outros"> Outros
 				 </label>
 				 
-				 <p>
 				 
 				 <label for="msg">Mensagem:</label>
-				 <br>
-				 <textarea name="mensagem" id="msg" cols="30" rows="8" placeholder="Sua mensagem aqui !!"></textarea>
-				 <br>
+						 <textarea name="mensagem" id="msg" cols="30" rows="8" placeholder="Sua mensagem aqui !!"></textarea>
 				 
-				 <button type="submit">Enviar Mensagem</button>
-				 <button type="reset">Limpar Formulário</button>
+				 <button type="submit" class="btn btn-principal">Enviar Mensagem</button>
+				 <button type="reset" class="btn btn-secundario">Limpar Formulário</button>
+			 	</fieldset>
 			 	
 			 </form>
 			

@@ -29,8 +29,19 @@ textarea {
 	padding: 0.3em;
 }
 
+.btn {
+	padding: 0.6em;
+	padding-left: 1em;
+	border-top-left-radius: 1em;
+	color: #EEE;
+	font-weight: 600;
+	font-size: 1rem;
+}
+
 .btn-principal {
 	background-color: #3B8686;
 }
 
-
+.btn-secundario {
+	background-color: #94aaaa;
+}
