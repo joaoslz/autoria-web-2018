@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Pedido de Venda</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+
 </head>
+
 <body class="container">
-    
+
     <h1 id="titulo" class="text-center">Novo Pedido</h1>
-    
+
     <form class="form">
-        
+
         <div class="form-group">
             <label for="nome">Nome</label>
-            <input type="text" id="nome" class="form-control" required autofocus value="Caneta"/>        
-        </div>    
-        
+            <input type="text" id="nome" 
+                   value="Caneta"    class="form-control" required autofocus value="" />
+        </div>
+
         <div class="form-group">
             <label for="quantidade">Quantidade</label>
-            <input type="number" min="1" step="1" id="quantidade" class="form-control" 
-                    value="1" required/>
+            <input type="number" min="1" step="1" id="quantidade" class="form-control" value="1" required/>
         </div>
-        
+
         <div class="form-group">
             <label for="valor">Valor</label>
-            <input id="valor" type="number" class="form-control"  
-                   min="0.01" step="0.01" value="1.99" required>
+            <input id="valor" type="number" class="form-control" min="0.01" step="0.01" value="1.99" required>
         </div>
         <div class="text-center">
-           <button class="btn btn-primary" type="submit">Incluir Produtos</button>
-           <button class="btn btn-default" type="reset">Limpar Formulário</button>
-		 </div>
-        
+            <button class="btn btn-primary" type="submit">Incluir Produtos</button>
+            <button class="btn btn-default" type="reset">Limpar Formulário</button>
+        </div>
+
     </form>
-     
+
     <br>
     <br>
     <table class="table table-hover table-bordered">
@@ -45,17 +47,16 @@
                 <th>SUBTOTAL</th>
             </tr>
         </thead>
-        
+
         <tbody>
-            
+           
         </tbody>
         <tfoot>
             <td colspan="3" class="text-right">Total</td>
             <td class="text-center js-total">0</td>
         </tfoot>
     </table>
-<script src="js/form-pedido.js"></script>    
-<script src="js/calcula-pedido.js"></script>    
-
+    <script src="js/form-pedido.js"></script>
 </body>
+
 </html>
