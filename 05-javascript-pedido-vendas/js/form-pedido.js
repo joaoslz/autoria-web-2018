@@ -8,38 +8,44 @@ document.getElementsByClassName('form-control')
 document.getElementsByTagName('h2');
  */
 
- let nome = document.querySelector('#nome').value;
- let quantidade = document.querySelector('#quantidade').value;
- let valor = document.querySelector('#valor').value;
+ let tBody = document.querySelector('#tbodyItemPedido');
 
- // capturar o evento de submeter o formulário
- 
- 
- document.querySelector('form')
-         .addEventListener('submit', function(event ) {
-
-            event.preventDefault();  
-
-             let tr = document.createElement('tr');
-             let tdNome =document.createElement('td');  
-             let tdQuantidade =document.createElement('td'); 
-             let tdValor =document.createElement('td'); 
-
-             tdNome.textContent = nome;
-             console.log(tdNome );
-
-         });
+//document.querySelector('form').addEventListener('submit', function (event) {
+document.querySelector('#btnCadastro').addEventListener('click', function (event) {
 
 
+    event.preventDefault();
+     
+    let campos = obterDadosDoFormulario();
 
- console.log(nome );
+    let tr = document.createElement('tr');
+    campos.forEach(campo => {
+                        let td =  document.createElement('td');
+                        td.textContent = campo;
+                        tr.appendChild(td );
+                  });
+  
+    let tdSubTotal = criaCelulaDoSubTotal(campos );
+  
+     tr.appendChild(tdSubTotal );
 
- /*
-  <tr>
-      <td>Lápis 2B</td>
-      <td>5</td>
-      <td>4.50</td>
-      <td>22</td>
-  </tr>
-           
- */
+    tBody.appendChild(tr );
+
+  });
+
+
+  function obterDadosDoFormulario() {
+      return [ document.querySelector('#nome').value,
+               document.querySelector('#quantidade').value,
+               document.querySelector('#valor').value ];
+  }
+
+  function criaCelulaDoSubTotal(campos ) {
+    document.createElement('td');
+    let subTotal = campos[1] * campos[2];
+    let tdSubTotal = document.createElement('td');
+    tdSubTotal.textContent = subTotal;
+    
+    return tdSubTotal;
+  }
+
